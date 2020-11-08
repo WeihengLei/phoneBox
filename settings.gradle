@@ -1,0 +1,4 @@
+rootProject.name = 'phoneBox'
+include 'phoneBox-backend-core'
+include 'phoneBox-backend-cms'
+include 'phoneBox-backend-api'
