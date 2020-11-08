@@ -1,14 +1,11 @@
-plugins {
-    id 'java'
-}
-
-group 'org.example'
-version '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
 
 dependencies {
+    //依赖子项目
+    compile project (":phoneBox_backend_core")
+
+    compileOnly "io.springfox:springfox-boot-starter:3.0.0-SNAPSHOT"
+
+
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
