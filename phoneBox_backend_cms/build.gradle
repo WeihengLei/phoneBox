@@ -9,6 +9,4 @@ dependencies {
     compileOnly 'org.springframework.boot:spring-boot-starter-data-mongodb'
     compileOnly 'org.springframework.boot:spring-boot-starter-data-redis'
     compileOnly 'org.springframework.session:spring-session-data-redis'
-
-    testCompile group: 'junit', name: 'junit', version: '4.12'
 }

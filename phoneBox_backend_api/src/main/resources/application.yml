@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+#logging:
+#  level:
+#    org.mongodb.driver.cluster: ERROR
+#  config: classpath:logback-spring.xml
+
+spring:
+  data:
+    mongodb:
+      #uri: mongodb://${dbUser}:${dbPwd}@${dbIP}:27017/${dbName}
+      uri: mongodb://localhost:27017/phoneBox
+  servlet:
+    multipart:
+      max-file-size: 5000
+      max-request-size: 5000
+
+
+spring.mvc.static-path-pattern: /static/**
+jasypt:
+  encryptor:
+    password: abcd
+    algorithm: PBEWithSHA1AndDESede
+
+
+spring.mail.host: smtp.qq.com
+spring.mail.username: 1121008660@qq.com
+spring.mail.password: akwyjkoppczxighd
+spring.mail.properties.mail.smtp.auth: true
+spring.mail.properties.mail.smtp.starttls.enable: true
+spring.mail.properties.mail.smtp.starttls.required: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
